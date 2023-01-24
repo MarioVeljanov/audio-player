@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.img {
+  position: abolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-20px);
+  transform: translatet(-50%);
+  width: 110%;
+  height: 110%;
+  filter: blur(10px);
+}
+
+.container_one {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+   transform: translateX(-50%);
+  box-shadow: 0px 0px 25px black;
+}
+
+.container {
+  
+ 
+  width: 330px;
+  background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  padding: 10px 15px 5px 15px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.music_bts {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.music_image_wrapper {
+  overflow: hidden;
+  position: absolute;
+  width: 330px;
+  height: 300px;
+  left: -0.0px;
+  top: -300px;  
+  /* z-index: -1; */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 0px 0px 15px black;
+}
+
+.music_img {
+  width: 330px;
+  height: 300px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  margin: auto;
+  
+
+}
+
+.audio_track {
+    width: 250px;
+    height: 5px;
+    background-color: #dddddd;
+    margin: 20px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+
+
+  
+}
+
+
+ 
+.time {
+    
+    width: 0px;
+    height: 5px;
+    background-color: #474747;
+    
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.time_follow {
+    width: 7px;
+    height: 13px;
+    background-color: rgb(193, 255, 6);
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+}
+
+.play {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.play:hover {
+  opacity: 0.7;
+}
+
+
+.prev {
+    width: 30px;
+    height: 30px;
+}
+
+.next {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.7;
+}
+
+.volume_wrapper {
+  width: 100px;
+}
+
+.mucic_name {
+    color: rgb(193, 255, 6);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.mucic_title {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    bottom: 16%;
+}
+
+.current_time {
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  align-items: center;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 36px;
+  bottom: -29px;
+  cursor: pointer;
+}
+
+.all_time {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  bottom: 0%;
+  right: 9%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  align-items: center;
+  color: rgb(193, 255, 6);
+}
+
+ 
+input[type=range] {
+  height: 3px;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animation: 0.2s;
+  box-shadow: 0px 0px 0px #c9c9c9;
+  background: rgb(19, 19, 19);
+  border-radius: 3px;
+  /* border: 0px solid #FFFFFF; */
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #c9c9c9;
+  border: 0px solid rgb(193, 255, 6);
+  height: 21px;
+  width: 13px;
+  border-radius: 6px;
+  background: rgb(193, 255, 6);;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgb(19, 19, 19);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animation: 0.2s;
+  box-shadow: 0px 0px 0px #c9c9c9;
+  background: rgb(19, 19, 19);
+  border-radius: 3px;
+  /* border: 0px solid #FFFFFF; */
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #c9c9c9;
+  border: 0px solid rgb(193, 255, 6);
+  height: 15px;
+  width: 10px;
+  border-radius: 6px;
+  background: rgb(193, 255, 6);
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animation: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #333;
+  /* border: 0px solid #FFFFFF; */
+  border-radius: 6px;
+  box-shadow: 0px 0px 0px #c9c9c9;
+}
+input[type=range]::-ms-fill-upper {
+  background: rgb(19, 19, 19);
+  /* border: 0px solid #FFFFFF; */
+  border-radius: 6px;
+  box-shadow: 0px 0px 0px #c9c9c9;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #c9c9c9;
+  border: 0px solid rgb(193, 255, 6);
+  height: 15px;
+  width: 10px;
+  border-radius: 6px;
+  background: rgb(193, 255, 6);
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgb(19, 19, 19);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgb(19, 19, 19);
+}
+

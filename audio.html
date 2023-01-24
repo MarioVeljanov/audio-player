@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./audio.css">
+</head>
+<body>
+    <audio id="audio" src="./assets/audio/beyonce.mp3"></audio>
+    <img id="img" class="img img1" src="./assets/img/lemonade.png" alt="">
+     
+
+    <div class="container_one">
+        <div class="container" id="controls">
+            <div class="music_image_wrapper">
+                <img class="music_img" src="./assets/img/lemonade.png" alt="">
+            </div>
+            <div class="wrapper">
+                <img class="play" src="./assets/svg/play.png" />
+                <div class="mucic_desr">
+                    <div class="mucic_name">Beyonce</div>
+                    <div class="mucic_title">Don't Hurt Yourself</div>
+                </div>
+                <div class="music_bts">
+                    <img class="prev" src="./assets/svg/backward.png" />
+                    <img class="next" src="./assets/svg/forward.png">
+                </div>
+            </div>
+
+            <div class="volume_wrapper">
+                <input id="range" min="0" max="100" value="0" type="range" controls>
+            </div>
+
+            <div class="all_time">1</div>
+            <div class="audio_track" data-max="250">
+                <div class="time">
+                    <div class="time_follow"></div>
+                </div>
+            </div>
+            <div class="current_time">0 : 00</div>
+        </div>
+    </div>
+    
+
+    <script src="./audio.js"></script>
+</body>
+</html>
